@@ -11,8 +11,7 @@ async def handle_dental_booking(
     payload: dict, 
     x_retell_secret: str = Header(None, alias="X-Retell-Secret")
 ):
-    # 1. Security Check: Make sure the call is actually coming from your 
-Retell account
+   # 1. Security Check: Make sure the call is actually coming from your Retell account
     if x_retell_secret != os.environ.get("RETELL_SECRET_TOKEN"):
         raise HTTPException(status_code=401, detail="Unauthorized")
         
