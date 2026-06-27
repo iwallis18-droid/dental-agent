@@ -43,8 +43,8 @@ expects
     }
     
     # 4. Push the data directly to your Unified Dental API middleware
-    middleware_url = 
-"https://api.yourunifieddentalapi.com/v1/appointments"
+    middleware_url =
+ "https://hook.us2.make.com/2ir8dddrancgexcghhtmowgfl44kt32xs"
     headers = {
         "Authorization": f"Bearer {os.environ.get('UNIFIED_API_KEY')}",
         "Content-Type": "application/json"
